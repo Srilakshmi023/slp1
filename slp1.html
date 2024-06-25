@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <style>
+        body {
+            background-color: #D0F01B;
+            color: blue;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-top: 50px;
+        }
+        .animated {
+            animation: slide-in 1s ease-out;
+        }
+        @keyframes slide-in {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .centered {
+            display: block;
+            margin: 0 auto;
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Launchpad</h1>
+    <div class="animated">
+        <img src="https://example.com/your-image.jpg" alt="Image description" class="centered">
+    </div>
+</body>
+</html>
